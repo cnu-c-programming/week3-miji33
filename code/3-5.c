@@ -3,7 +3,7 @@
 
 void my_sum(char T, int count, ...) {
     va_list ap;
-    va_start(ap, T);
+    va_start(ap, count);
 
     if (T == 'S') {
         for (int i=0; i<count; i++) {
