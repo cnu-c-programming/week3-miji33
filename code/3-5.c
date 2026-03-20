@@ -6,9 +6,9 @@ void my_sum(char T, int count, ...) {
     va_start(ap, count);
 
     if (T == 'S') {
-        printf("%s ", va_arg(ap, char*));
+        printf("%s", va_arg(ap, char*));
         for (int i=1; i<count; i++) {
-            printf("%s ", va_arg(ap, char*));
+            printf(" %s", va_arg(ap, char*));
         }
     } else if (T == 'C') {
         for (int i=0; i<count; i++) {
