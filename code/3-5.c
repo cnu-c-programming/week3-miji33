@@ -11,7 +11,7 @@ void my_sum(char T, int count, ...) {
         }
     } else if (T == 'C') {
         for (int i=0; i<count; i++) {
-            printf("%c", (char)va_arg(ap, int));
+            printf("%c", va_arg(ap, int));
         }
     } else if (T == 'D') {
         int total = 0;
